@@ -1,19 +1,11 @@
 
 import unittest
-from returnNumeros import returnNumeros
+from returnNumeros import Romannumerals
 
 class test_basic(unittest.TestCase):
-	def testNumeroUno(self):
-		classNumero = returnNumeros(None)
-		assert classNumero.numeroUno == 1
-
-	def testNumeroDos(self):
-		classNumero = returnNumeros(None)
-		assert classNumero.numeroDos == 2	
-	
-	def testNumeroTres(self):
-		classNumero = returnNumeros(None)
-		assert classNumero.returnNumeroTres() == 3
+	def testresultforSum(self):
+		classNumero = Romannumerals()
+		assert classNumero.Sum('I','I') == 1
 
 if __name__=='__main__':
 	unittest.main()
