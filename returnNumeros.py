@@ -7,4 +7,6 @@ class returnNumeros(object):
 		self.arg = arg
 		self.numeroUno = 1
 		self.numeroDos = 2
+	def returnNumeroTres(self):
+		return(3)
 		
